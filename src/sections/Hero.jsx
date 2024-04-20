@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
       <div className="flex flex-1 w-full justify-center items-start ">
         <img
-          className="object-contain w-[100%] mt-4  "
+          className="object-contain w-[80%] mt-4  "
           src={headphone}
           alt=""
         />
