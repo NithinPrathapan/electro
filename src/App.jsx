@@ -3,6 +3,7 @@ import { BrowserRouter, Routes } from "react-router-dom";
 import Nav from "./sections/Nav";
 import Hero from "./sections/Hero";
 import ShopByCategory from "./sections/ShopByCategory";
+import FeaturedProducts from "./sections/FeaturedProducts";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Nav />
       <Hero />
       <ShopByCategory />
+      <FeaturedProducts />
       <BrowserRouter>
         <Routes></Routes>
       </BrowserRouter>
