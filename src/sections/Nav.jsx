@@ -15,13 +15,12 @@ const Nav = () => {
         </div>
       </div>
       <div className="routes hidden sm:block ">
-        <div className="flex gap-2 font-oswald tracking-wider font-semibold  md:gap-8 ">
-          <h1>Home</h1>
-          <h1>Category</h1>
-          <h1>About Us</h1>
-          <h1>FAQ</h1>
-          <h1>Blog</h1>
-          <h1>Contact</h1>
+        <div className="flex gap-2 font-oswald text-lg tracking-wider font-semibold  md:gap-8 ">
+          <a href="home">Home</a>
+          <a href="home">Category</a>
+          <a href="home">About us</a>
+          <a href="home">Blog</a>
+          <a href="home">Contact</a>
         </div>
       </div>
       <div className="cart-section flex flex-row justify-between gap-2 items-center">
