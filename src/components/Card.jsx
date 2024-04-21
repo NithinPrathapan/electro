@@ -7,9 +7,12 @@ const Card = ({ title, img }) => {
         <img
           className=" object-cover rounded-tr-[40px]  rounded-bl-[40px] w-full h-full"
           src={img}
+          alt="category"
         />
       </div>
-      <h1 className="text-center text-lg font-semibold uppercase my-2">{title}</h1>
+      <h1 className="text-center text-lg font-semibold uppercase my-2">
+        {title}
+      </h1>
       <p className="text-sm text-center py-2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
         provident nisi ratione!
