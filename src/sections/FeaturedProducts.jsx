@@ -6,9 +6,9 @@ const FeaturedProducts = () => {
   return (
     <div
       id="category "
-      className="my-4 py-2 flex-col flex justify-end items-end px-8 mx-auto "
+      className="my-4 py-2 flex-col flex justify-end items-end sm:px-8  mx-auto "
     >
-      <h1 className="text-3xl text-center font-prompt font-semibold mx-auto">
+      <h1 className="sm:text-3xl text-2xl w-full text-center font-prompt font-semibold mx-auto">
         Featured products
       </h1>
       <div className="flex flex-wrap my-4 justify-center gap-8">

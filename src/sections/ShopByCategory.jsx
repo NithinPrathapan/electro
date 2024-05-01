@@ -4,7 +4,7 @@ import Card from "../components/Card";
 const ShopByCategory = () => {
   return (
     <div id="category " className="my-4 py-2 flex-col flex">
-      <h1 className="text-3xl text-center font-prompt font-semibold">
+      <h1 className="sm:text-3xl text-2xl w-full text-center font-prompt font-semibold mx-auto">
         Shop By Category
       </h1>
       <div className="flex flex-wrap justify-center gap-8">
@@ -24,7 +24,7 @@ const ShopByCategory = () => {
         />
       </div>
       <div className=" justify-center flex my-4">
-        <button className="text-xl shadow-md max-w-sm bg-white rounded-full sm:px-6 sm:py-3  px-4 py-3">
+        <button className="text-white  w-[200px] my-3 font-bold bg-blue-500 rounded-md px-4 py-2 left-4 bottom-2">
           Shop All
         </button>
       </div>
