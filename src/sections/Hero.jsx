@@ -8,8 +8,8 @@ const Hero = () => {
       className="px-4 h-full flex flex-col md:flex-row justify-between items-center "
       id="home"
     >
-      <div className="w-full sm:h-full sm:text-left text-center flex sm:flex-1 flex-col ">
-        <h1 className="font-prompt w-full sm:text-[50px] text-[30px]  pt-2  font-semibold  sm:ml-[10%] ">
+      <div className="w-full sm:h-full sm:text-left text-center flex sm:flex-1 flex-col mt-12 ">
+        <h1 className="font-Roboto w-full  text-[40px] mx-auto text-center  pt-2  font-semibold md:text-[60px] md:text-left md:ml-[10%]  ">
           {text.map((el, i) => (
             <motion.span
               initial={{ opacity: 0 }}
@@ -51,7 +51,11 @@ const Hero = () => {
         duration="500ms"
         className="flex flex-1 w-full  justify-center items-start "
       >
-        <img className="object-contain w-[80%] mt-4  " src={headphone} alt="" />
+        <img
+          className="object-cover w-[80%] mt-8  sm:mt-4 "
+          src={headphone}
+          alt=""
+        />
       </motion.div>
     </div>
   );

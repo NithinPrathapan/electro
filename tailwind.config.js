@@ -12,7 +12,7 @@ export default {
     extend: {},
     fontFamily: {
       oswald: ["Oswald"],
-      prompt: ["Prompt"],
+      Roboto: ["Roboto"],
     },
   },
   plugins: [],
