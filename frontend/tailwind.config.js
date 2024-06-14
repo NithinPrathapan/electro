@@ -13,6 +13,7 @@ export default {
     fontFamily: {
       oswald: ["Oswald"],
       Roboto: ["Roboto"],
+      monster: ["Montserrat"],
     },
   },
   plugins: [],

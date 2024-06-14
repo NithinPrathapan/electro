@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="w-full sm:h-full sm:text-left text-center flex sm:flex-1 flex-col mt-12 ">
         <h1 className="font-Roboto w-full  text-[40px] mx-auto text-center  pt-2  font-semibold md:text-[60px] md:text-left md:ml-[10%]  ">
           {text.map((el, i) => (
-            <motion.span
+            <motion.span className="text-gray-600"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{

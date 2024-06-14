@@ -3,18 +3,24 @@ import headphone from "../assets/headphone.png";
 
 const NewArrivals = () => {
   return (
-    <div className="">
-      <h1 className="text-3xl mb-8 text-center font-prompt font-semibold mx-auto">
+    <div className="flex flex-col gap-6">
+      <h1 className="sm:text-2xl text-xxl w-full text-center font-prompt font-bold mx-auto font-monster">
         New Arrivals
       </h1>
       <div className="flex flex-col sm:flex-row justify-center mx-auto max-w-7xl gap-2">
         <div className=" p-6 flex flex-1 flex-col gap-4 justify-start border-2 rounded-xl">
-          <h1 className="text-white text-3xl font-semibold font-oswald tracking-wider">
+          <h1 className="text-white text-3xl font-semibold font-monster ">
             JBL Super bass Headset
           </h1>
-          <button className="text-white  w-[200px] my-3 font-bold bg-blue-500 rounded-md px-4 py-2 left-4 bottom-2">
-            Shop Now
-          </button>
+          <div>
+            <button
+              className="bg-yellow-400  text-sm rounded-full py-2 px-4 font-semibold
+          border-none
+         "
+            >
+              Shop Now
+            </button>
+          </div>
           <img src={headphone} alt="product" />
         </div>
         <div className="flex flex-1 flex-col border-2 rounded-lg p-2 gap-2">
