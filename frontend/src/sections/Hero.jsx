@@ -2,61 +2,64 @@ import React from "react";
 import headphone from "../assets/headphone.png";
 import { motion } from "framer-motion";
 const Hero = () => {
-  const text = "The Super Bass JBL Electro 355 Headset".split(" ");
+  const text = "The Super Bass JBL Electro 355 Headset".split();
   return (
     <div
-      className="px-4 h-full flex flex-col md:flex-row justify-between items-center "
+      className=" w-full flex flex-col md:flex-row gap-8 sm:p-12 p-4 items-center justify-center "
       id="home"
     >
-      <div className="w-full sm:h-full sm:text-left text-center flex sm:flex-1 flex-col mt-12 ">
-        <h1 className="font-Roboto w-full  text-[40px] mx-auto text-center  pt-2  font-semibold md:text-[60px] md:text-left md:ml-[10%]  ">
-          {text.map((el, i) => (
-            <motion.span className="text-gray-600"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{
-                duration: 2,
-                delay: i / 10,
-              }}
-              key={i}
-            >
-              {el}{" "}
-            </motion.span>
-          ))}
-        </h1>
-        <p className="ml-[10%] mb-2"></p>
-        <div className="flex items-center sm:ml-[10%] justify-center sm:justify-start gap-6">
+      <div className="flex flex-col w-full h-full   justify-center items-center text-center">
+        <div>
+          <h1 className="flex  font-monster w-full     text-[40px] lg:text-[60px]  font-bold  justify-center  items-center ">
+            {text.map((el, i) => (
+              <motion.span
+                className="text-gray-600"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  duration: 2,
+                  delay: i / 10,
+                }}
+                key={i}
+              >
+                {el}{" "}
+              </motion.span>
+            ))}
+          </h1>
+        </div>
+        {/* button */}
+        <div className="flex gap-4">
           <motion.button
-            animate={{ y: 20, scale: 1 }}
-            initial={{ scale: 0 }}
+            animate={{ y: 10, scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="sm:text-xl shadow-md bg-white rounded-full sm:px-4 sm:py-3   px-2 py-2"
+            className=" shadow-md bg-white rounded-full  min-w-[150px] px-2 py-2"
           >
             Order Now
           </motion.button>
           <motion.button
-            animate={{ x: 0, y: 20, scale: 1 }}
-            initial={{ x: 40, scale: 0 }}
+            animate={{ y: 10, scale: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="sm:text-xl shadow-md bg-white rounded-full sm:px-4 sm:py-3  px-2 py-2"
+            className="shadow-md bg-white rounded-full  min-w-[150px] px-2 py-2"
           >
             Shop More
           </motion.button>
         </div>
       </div>
-      <motion.div
-        animate={{ scale: 1 }}
-        initial={{ scale: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-        duration="500ms"
-        className="flex flex-1 w-full  justify-center items-start "
-      >
-        <img
-          className="object-cover w-[80%] mt-8  sm:mt-4 "
-          src={headphone}
-          alt=""
-        />
-      </motion.div>
+      <div>
+        <motion.div
+          animate={{ scale: 1 }}
+          initial={{ scale: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          duration="500ms"
+          className="flex flex-1 w-full  justify-center items-start "
+        >
+          <img
+            className="object-cover  mt-8  sm:mt-4 "
+            src={headphone}
+            alt=""
+          />
+        </motion.div>
+      </div>
     </div>
   );
 };

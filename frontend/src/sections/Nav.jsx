@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <section>
       <nav
-        className="flex justify-between items-center
+        className="flex justify-between items-center py-4 px-4
     "
       >
         <div className="">
@@ -19,12 +19,11 @@ const Nav = () => {
             ELECTRO
           </h1>
         </div>
-        <div className=" gap-12 font-Roboto font-semibold  justify-between mx-auto text-lg tracking-widest hidden sm:flex ">
-          <h1 className="text-black  cursor-pointer ">Home</h1>
+        <div className=" gap-12 font-monster text-sm font-semibold  justify-between mx-auto  text-[16px] hidden sm:flex ">
           <h1 className="text-black  cursor-pointer ">About</h1>
-          <h1 className="text-black  cursor-pointer ">Product</h1>
-          <h1 className="text-black  cursor-pointer ">Shop</h1>
-          <h1 className="text-black  cursor-pointer ">Contact</h1>
+          <h1 className="text-black  cursor-pointer ">Contact-us</h1>
+          <h1 className="text-black  cursor-pointer ">Login</h1>
+          <h1 className="text-black  cursor-pointer ">Sign up</h1>
         </div>
 
         <div className="flex gap-4 items-center px-2 ">
@@ -36,9 +35,7 @@ const Nav = () => {
           <FaOpencart size={28} />
         </div>
       </nav>
-      <div>
-      
-      </div>
+      <div></div>
     </section>
   );
 };
